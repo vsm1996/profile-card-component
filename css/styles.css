@@ -39,6 +39,7 @@ body {
   background: url(../images/bg-pattern-card.svg) no-repeat 0px 0px / contain;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 1rem 1rem 2rem var(--color-dark-cyan);
 }
 
 .card__image {
