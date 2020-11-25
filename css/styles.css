@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-dark-cyan: #19a2ae;
+  --color-dark-desat-blue: #2d3248;
+  --color-dark-gray-blue: #6a6f81;
+  --color-dark-gray: #969696;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/bg-pattern-top.svg) no-repeat -40rem -50rem / cover,
+    url(../images/bg-pattern-bottom.svg) no-repeat 25rem 25rem / cover;
+  background-color: var(--color-dark-cyan);
+  display: flex;
+  color: var(--color-dark-desat-blue);
+
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.card {
+  height: 25rem;
+  width: 22rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url(../images/bg-pattern-card.svg) no-repeat 0px 0px / contain;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card__image {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.card__header {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card__header-age {
+  font-weight: 300;
+  color: var(--color-dark-gray);
+}
+
+.card__location {
+  margin-bottom: 1rem;
+  color: var(--color-dark-gray);
+}
+
+.card__status {
+  display: flex;
+  border-top: 1px solid var(--color-dark-gray);
+  align-items: center;
+  width: 22rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.card__status-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__status-item-number {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card__status-item-stat {
+  font-size: 10px;
+  color: var(--color-dark-gray);
+  letter-spacing: 2px;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (max-width: 1150px) {
+  body {
+    background: url(../images/bg-pattern-top.svg) no-repeat -30rem -35rem /
+        cover,
+      url(../images/bg-pattern-bottom.svg) no-repeat 25rem 25rem / cover;
+    background-color: var(--color-dark-cyan);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: url(../images/bg-pattern-top.svg) no-repeat -20rem -35rem /
+        cover,
+      url(../images/bg-pattern-bottom.svg) no-repeat 25rem 25rem / cover;
+    background-color: var(--color-dark-cyan);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background: url(../images/bg-pattern-top.svg) no-repeat -30rem -30rem /
+        cover,
+      url(../images/bg-pattern-bottom.svg) no-repeat 20rem 20rem / cover;
+    background-color: var(--color-dark-cyan);
+  }
+}
