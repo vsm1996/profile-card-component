@@ -51,6 +51,7 @@ body {
 .card__header {
   margin-bottom: 1rem;
   font-weight: 700;
+  font-size: 0.65rem;
 }
 
 .card__header-age {
